@@ -17,7 +17,7 @@ const forgotPassword = async (req, res) => {
     user.resetToken = resetToken;
     await user.save();
 
-    const resetUrl = `https://task-master-frontend-beta.vercel.app/resetPassword?token=${resetToken}`;
+    const resetUrl = `https://task-master-frontend-delta.vercel.app/resetPassword?token=${resetToken}`;
     var transporter = createTransport({
         service: 'gmail',
         host: 'smtp.gmail.com',
